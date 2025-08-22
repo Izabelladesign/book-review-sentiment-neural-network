@@ -1,17 +1,53 @@
-# book-review-sentiment-neural-network
-Book Review Sentiment Analysis Using Neural Networks
+# Book Review Sentiment Analysis with Neural Networks
 
-A machine learning pipeline to classify the sentiment of book reviews using neural networks and natural language processing (NLP) techniques.
+This project applies a complete machine learning workflow to predict the sentiment (positive or negative) of book reviews using neural networks and natural language processing (NLP) techniques.
 
-This project focuses on predicting the sentiment (positive or negative) of book reviews using a feedforward neural network trained on a dataset of review text. It applies a complete machine learning workflow including:
-	- Text preprocessing and cleaning
-(lowercasing, removing special characters, and vectorizing using TF-IDF)
-	- Exploratory data analysis (EDA)
-(distribution of review sentiments, word frequency analysis)
-	- Model design and training using TensorFlow/Keras
-(feedforward neural network with varying dropout rates and training epochs)
-	- Hyperparameter experimentation
-(testing model performance under different regularization and training configurations)
-	- Evaluation through accuracy, loss curves, and confusion matrices
+---
 
-The final model achieves consistent sentiment classification performance, highlighting how neural networks can be applied to simple NLP tasks. This approach can be expanded to other domains like product reviews, movie feedback, or customer satisfaction analysis.
+## Data Preprocessing
+
+- Cleaned and normalized review text  
+  (e.g., lowercasing, removing punctuation and special characters)
+- Transformed text data into numerical features using TF-IDF vectorization
+
+---
+
+## Exploratory Data Analysis (EDA)
+
+- Analyzed sentiment class distribution
+- Reviewed word frequency and review lengths
+- Explored trends and patterns within the review dataset
+
+---
+
+## Model Building and Training
+
+- Built a feedforward neural network using TensorFlow/Keras
+- Tuned hyperparameters by varying:
+  - Dropout rates
+  - Number of training epochs
+
+---
+
+## Evaluation and Tuning
+
+- Tracked training vs. validation accuracy and loss across epochs
+- Evaluated predictions using confusion matrices
+- Visualized model performance and overfitting behavior
+
+---
+
+## Key Results
+
+- The final model performed well in binary sentiment classification
+- Dropout regularization improved generalization
+- Demonstrated the applicability of neural networks for basic NLP tasks
+
+---
+
+## Applications
+
+This pipeline can be extended for use in:
+- Movie or product review sentiment analysis
+- Customer satisfaction prediction
+- Social media content classification
